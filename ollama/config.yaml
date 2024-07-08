@@ -1,0 +1,43 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Ollama
+version: latest
+slug: ollama
+description: "Ollama makes it easy to get up and running with large language models locally."
+url: "https://ollama.com"
+image: "docker.io/ollama/ollama"
+arch:
+  - aarch64
+  - amd64
+init: false
+map:
+  - config:rw
+startup: application
+
+#Network configuration
+ingress: true
+ingress_port: 11434
+ingress_stream: true
+ports:
+  11434/tcp: 11434
+ports_description:
+  11434/tcp: "Ollama API"
+watchdog: tcp://[HOST]:[PORT:11434]
+
+#Environmental variables
+legacy: true
+options:
+  - OLLAMA_MODELS: "/config/ollama"
+schema:
+  - OLLAMA_DEBUG: str?
+  - OLLAMA_HOST: str?
+  - OLLAMA_KEEP_ALIVE: str?
+  - OLLAMA_MAX_LOADED_MODELS: str?
+  - OLLAMA_MAX_QUEUE: str?
+  - OLLAMA_MODELS: str
+  - OLLAMA_NUM_PARALLEL: str?
+  - OLLAMA_NOPRUNE: str?
+  - OLLAMA_ORIGINS: str?
+  - OLLAMA_TMPDIR: str?
+  - OLLAMA_FLASH_ATTENTION: str?
+  - OLLAMA_LLM_LIBRARY: str?
+  - OLLAMA_MAX_VRAM: str?
