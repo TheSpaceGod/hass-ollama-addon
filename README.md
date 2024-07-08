@@ -12,10 +12,10 @@ Ollama Docker documentation (HW: Intel accelerator CPU, iGPU, GPU): <https://git
 
 This repository contains the following add-ons:
 
-### [ollama](./ollama)
-### [ollama-amd](./ollama-amd)
-### [ollama-intel](./ollama-intel)
-### [ollama-nvidia](./ollama-nvidia)
+- [ollama](./ollama)
+- [ollama-amd](./ollama-amd)
+- [ollama-intel](./ollama-intel)
+- [ollama-nvidia](./ollama-nvidia)
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
