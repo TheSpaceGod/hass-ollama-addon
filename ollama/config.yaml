@@ -1,5 +1,5 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: Ollama
+name: ollama
 version: latest
 slug: ollama
 description: "Ollama makes it easy to get up and running with large language models locally."

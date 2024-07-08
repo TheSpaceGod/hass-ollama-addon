@@ -1,10 +1,10 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: Ollama
+name: ollama-intel
 version: latest
-slug: ollama
+slug: ollama-intel
 description: "Ollama makes it easy to get up and running with large language models locally."
 url: "https://ollama.com"
-image: "ghcr.io/TheSpaceGod/ollama-amd64-ipex-xpu"
+image: "ghcr.io/TheSpaceGod/ollama-amd64-ipex-xpu:latest"
 arch:
   - amd64
 devices:
