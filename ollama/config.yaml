@@ -26,18 +26,18 @@ watchdog: tcp://[HOST]:[PORT:11434]
 #Environmental variables
 legacy: true
 options:
-  - OLLAMA_MODELS: "/config/ollama"
+  OLLAMA_MODELS: "/config/ollama"
 schema:
-  - OLLAMA_DEBUG: str?
-  - OLLAMA_HOST: str?
-  - OLLAMA_KEEP_ALIVE: str?
-  - OLLAMA_MAX_LOADED_MODELS: str?
-  - OLLAMA_MAX_QUEUE: str?
-  - OLLAMA_MODELS: str
-  - OLLAMA_NUM_PARALLEL: str?
-  - OLLAMA_NOPRUNE: str?
-  - OLLAMA_ORIGINS: str?
-  - OLLAMA_TMPDIR: str?
-  - OLLAMA_FLASH_ATTENTION: str?
-  - OLLAMA_LLM_LIBRARY: str?
-  - OLLAMA_MAX_VRAM: str?
+  OLLAMA_DEBUG: str?
+  OLLAMA_HOST: str?
+  OLLAMA_KEEP_ALIVE: str?
+  OLLAMA_MAX_LOADED_MODELS: str?
+  OLLAMA_MAX_QUEUE: str?
+  OLLAMA_MODELS: str
+  OLLAMA_NUM_PARALLEL: str?
+  OLLAMA_NOPRUNE: str?
+  OLLAMA_ORIGINS: str?
+  OLLAMA_TMPDIR: str?
+  OLLAMA_FLASH_ATTENTION: str?
+  OLLAMA_LLM_LIBRARY: str?
+  OLLAMA_MAX_VRAM: str?
