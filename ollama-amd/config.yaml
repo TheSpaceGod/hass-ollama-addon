@@ -1,10 +1,10 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: ollama-amd
-version: latest
+version: rocm
 slug: ollama-amd
 description: "Ollama makes it easy to get up and running with large language models locally."
 url: "https://ollama.com"
-image: "docker.io/ollama/ollama:rocm"
+image: "docker.io/ollama/ollama"
 arch:
   - aarch64
   - amd64

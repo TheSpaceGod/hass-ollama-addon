@@ -4,7 +4,7 @@ version: latest
 slug: ollama-intel
 description: "Ollama makes it easy to get up and running with large language models locally."
 url: "https://ollama.com"
-image: "ghcr.io/TheSpaceGod/ollama-amd64-ipex-xpu:latest"
+image: "ghcr.io/TheSpaceGod/ollama-amd64-ipex-xpu"
 arch:
   - amd64
 devices:
